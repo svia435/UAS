@@ -7,7 +7,7 @@
   <title>burung</title>
   
   <link href="css/bootstrap.css" rel="stylesheet" />
-  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <style type="text/css">
     #panggung {
       background-image: url("background.png");
@@ -20,13 +20,25 @@
 </head>
 
 <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-fill"></i></a>
+        <a class="nav-link" href="#"><i class="bi bi-basket2"></i></a>
+        <a class="nav-link" href="#"><i class="bi bi-person-fill"></i></a>
+        <a class="nav-link" href="#"><i class="bi bi-box-arrow-right"></i></a>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    </nav>
+  
   <div id="panggung" class="d-flex justify-content-center align-items-center">
     <img id="objek" src="gambar/kanan-1.png">
   </div>
 
 <div class="d-flex justify-content-center">
-    <div class="btn btn-primary m-2" id="tombol-kiri">sini</div>
-    <div class="btn btn-primary m-2" id="tombol-kanan">sana</div>
+    <div class="btn btn-primary m-2" id="tombol-kiri">Read More</div>
+  
 </div>
 <h1>nama: nyai silvia</h1>
 <h1>kelas:ix</h1>
@@ -95,6 +107,18 @@
       $("#panggung").css("background-position-x", posisibackground);
     })
   })
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  </form>
+   
+    <footer class="py-3 bg-dark-subtle mt-auto">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="/Pasarcemelangbaru/index.html" class="nav-link px-2 text-body-secondary">Beranda</a></li>
+        <li class="nav-item"><a href="#" id="link-login-penjual" class="nav-link px-2 text-body-secondary">Login Penjual</a></li>
+        <li class="nav-item"><a href="/Pasarcemelangbaru/tentang.html" class="nav-link px-2 text-body-secondary">Tentang</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">&copy; 2023 Pasar Cemerlang</p>
+    </footer>
 </script>
 </body>
 
